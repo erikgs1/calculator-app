@@ -3,3 +3,15 @@
     margin: 0;
     list-style-type: none;
 }
+body{
+    background-color: #e6eafe;
+}
+.calculatorBody {
+    width: 230px;
+    margin: 30px auto 0;
+    background-color: #393756;
+}
+.calculatorBody ul #result{
+    color: #fff;
+    min-height: 100px;
+}

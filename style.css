@@ -13,11 +13,32 @@ body{
     margin: 30px auto 0;
     background-color: #393756;
 }
-
-.calculatorBody ul #result{
-    color: #fff;
-    min-height: 100px;
+.calculatorBody #num1{
+    width: 33.3333%;
+    background-color: #ccc;
+    min-height: 30px;
+    float: left;
 }
+.calculatorBody #operator{
+    width: 33.3333%;
+    background-color: #fff;
+    min-height: 30px;
+    float: left;
+}
+.calculatorBody #num2{
+    width: 33.3333%;
+    background-color: #ccc;
+    min-height: 30px;
+    float: left;
+}
+.calculatorBody #result{
+    width: 100%;
+    background-color: #000;
+    min-height: 30px;
+    float: left;
+
+}
+
 .calculatorBody .keyboard{
     width: 100%;
     float: left;

@@ -1,12 +1,12 @@
 var buttons = document.querySelectorAll(".buttons");
+var num1 = 0;
+var num2 = 0;
+var ope = '';
 for (var i = 0; i < buttons.length; i++ ){
-    // console.log(buttons[i]);
     buttons[i].onclick = function(){
-        console.log(this.innerHTML);
+        firstNumber(this.innerHTML);
     };
 }
 function firstNumber(num){
-    if (num === Number){
-        document.getElementById('result1').innerHTML;
-    }
+    document.getElementById('result1').innerHTML = num;
 }

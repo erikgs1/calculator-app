@@ -33,7 +33,7 @@ body{
 }
 .calculatorBody #result{
     width: 100%;
-    background-color: #000;
+    background-color: #aaa;
     min-height: 30px;
     float: left;
 

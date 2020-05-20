@@ -9,40 +9,40 @@
 <body>
     <div class="calculatorBody">
         <ul>
-            <li id="num1"></li>
+            <li id="result1"></li>
             <li id="operator"></li>
-            <li id="num2"></li>
+            <li id="result2"></li>
             <li id="result"><!-- Resultado da conta --></li>
         </ul>
         <ul class="keyboard">
-            <li><button id="clear" class="long bg-blue" onclick="calculator('Clear')">Clear</button></li>
-            <li><button id="%" class="bg-blue" onclick="calculator('%')">%</button></li>
-            <li><button id="/" class="bg-blue" onclick="calculator('&#247;')">&#247;</li>
+            <li><button class="long bg-blue buttons" type="button" onclick="calculator('Clear')">Clear</button></li>
+            <li><button class="bg-blue buttons" onclick="calculator('%')">%</button></li>
+            <li><button class="bg-blue buttons" onclick="calculator('&#247;')">&#247;</li>
         </ul>
         <ul class="keyboard">
-            <li><button id="7" onclick="calculator()">7</button></li>
-            <li><button id="8" onclick="calculator('8')">8</button></li>
-            <li><button id="9" onclick="calculator('9')">9</button></li>
-            <li><button id="x" class="bg-blue" onclick="calculator('x')">x</button></li>
+            <li><button class="buttons" onclick="calculator('7')">7</button></li>
+            <li><button class="buttons" onclick="calculator('8')">8</button></li>
+            <li><button class="buttons" onclick="calculator('9')">9</button></li>
+            <li><button class="bg-blue buttons " onclick="calculator('x')">x</button></li>
         </ul>
         <ul class="keyboard">
-            <li><button id="4" onclick="calculator('4')">4</button></li>
-            <li><button id="5" onclick="calculator('5')"> 5</button></li>
-            <li><button id="6" onclick="calculator('6')">6</button></li>
-            <li><button id="-" class="bg-blue" onclick="calculator('-')">-</button></li>
+            <li><button class="buttons" onclick="calculator('4')">4</button></li>
+            <li><button class="buttons" onclick="calculator('5')"> 5</button></li>
+            <li><button class="buttons" onclick="calculator('6')">6</button></li>
+            <li><button class="bg-blue buttons" onclick="calculator('-')">-</button></li>
         </ul>
         <ul class="keyboard">
-            <li><button id="1" onclick="calculator('1')">1</button></li>
-            <li><button id="2" onclick="calculator('2')">2</button></li>
-            <li><button id="3" onclick="calculator('3')">3</button></li>
-            <li class="bg-blue"><button id="+" class="bg-blue" onclick="calculator('+')">+</button></li>
+            <li><button class="buttons"  onclick="calculator('1')">1</button></li>
+            <li><button class="buttons"  onclick="calculator('2')">2</button></li>
+            <li><button class="buttons" onclick="calculator('3')">3</button></li>
+            <li><button class="bg-blue buttons" onclick="calculator('+')">+</button></li>
         </ul>
         <ul class="keyboard">
-            <li><button id="0" class="long" onclick="calculator('0')">0</button>
+            <li><button class="long buttons" onclick="calculator('0')">0</button>
             </li>
-            <li><button id="." onclick="calculator('.')">.</button>
+            <li><button class="buttons" onclick="calculator('.')">.</button>
             </li>
-            <li><button id="=" class="bg-blue" onclick="calculator('=')">=</button></li>
+            <li><button class="bg-blue buttons" onclick="calculator('=')">=</button></li>
         </ul>
     </div>
     <script src="script.js"></script>

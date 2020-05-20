@@ -13,7 +13,7 @@ body{
     margin: 30px auto 0;
     background-color: #393756;
 }
-.calculatorBody #num1{
+.calculatorBody #result1{
     width: 33.3333%;
     background-color: #ccc;
     min-height: 30px;
@@ -25,7 +25,7 @@ body{
     min-height: 30px;
     float: left;
 }
-.calculatorBody #num2{
+.calculatorBody #result2{
     width: 33.3333%;
     background-color: #ccc;
     min-height: 30px;

@@ -3,6 +3,7 @@ var operator = document.querySelectorAll(".operator");
 var equal = document.querySelector(".equal");
 var clear = document.querySelector(".clear");
 var cliqueiNum1 = false;
+var cliqueiResult = false;
 var operations = {
     '+': function (param1, param2) {return param1 + param2;},
     '-': function (param1, param2) {return param1 - param2;},
@@ -21,27 +22,28 @@ for (var i = 0; i < buttons.length; i++ ){
          }
     };
 }
+for (var j = 0; j < operator.length; j++ ){
+    operator[j].onclick = function(){
+        operation(this.innerHTML);
+    };
+}
 function firstNumber(num){
     var number = document.getElementById('result1').innerHTML;
     document.getElementById('result1').innerHTML = number + num;
 }
 
 function secondNumber(num2){
-    var number = document.getElementById('result2').innerHTML;
-    document.getElementById('result2').innerHTML = number + num2;
-}
-//
-
-for (var j = 0; j < operator.length; j++ ){
-    operator[j].onclick = function(){
-        operation(this.innerHTML);
+    if(cliqueiResult === false){
+        var number = document.getElementById('result2').innerHTML;
+        document.getElementById('result2').innerHTML = number + num2;
     };
 }
+
 function operation(ope){
     document.getElementById('operator').innerHTML = ope;
     cliqueiNum1 = true
-
 }
+
 equal.onclick = function(){
     var op = document.getElementById('operator').innerHTML;
     var soma = Number(document.getElementById('result1').innerHTML) + Number(document.getElementById('result2').innerHTML);
@@ -63,11 +65,14 @@ equal.onclick = function(){
     }
     else{
         document.getElementById('result').innerHTML = mod;
-    }
+    }p
+    cliqueiResult = true;
 }
 clear.onclick = function(){
     document.getElementById('result').innerHTML = '';
     document.getElementById('result1').innerHTML = '';
     document.getElementById('result2').innerHTML = '';
     document.getElementById('operator').innerHTML = '';
+    cliqueiNum1 = false;
+    cliqueiResult = false;
 }

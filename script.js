@@ -1,6 +1,7 @@
 var buttons = document.querySelectorAll(".buttons");
 var operator = document.querySelectorAll(".operator");
 var equal = document.querySelector(".equal");
+var clear = document.querySelector(".clear");
 var operations = {
     '+': function (param1, param2) {return param1 + param2;},
     '-': function (param1, param2) {return param1 - param2;},
@@ -58,11 +59,9 @@ equal.onclick = function(){
         document.getElementById('result').innerHTML = mod;
     }
 }
-// function calculator(e) {
-//     return function(x, y){
-//         if (typeof x !== 'number' || typeof y !== 'number'){
-//             return false;
-//         }
-//     return operation[operator] (x, y);
-//     }
-// }
+clear.onclick = function(){
+    document.getElementById('result').innerHTML = '';
+    document.getElementById('result1').innerHTML = '';
+    document.getElementById('result2').innerHTML = '';
+    document.getElementById('operator').innerHTML = '';
+}

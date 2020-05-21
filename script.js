@@ -2,6 +2,7 @@ var buttons = document.querySelectorAll(".buttons");
 var operator = document.querySelectorAll(".operator");
 var equal = document.querySelector(".equal");
 var clear = document.querySelector(".clear");
+var cliqueiNum1 = false;
 var operations = {
     '+': function (param1, param2) {return param1 + param2;},
     '-': function (param1, param2) {return param1 - param2;},
@@ -11,19 +12,23 @@ var operations = {
 }
 for (var i = 0; i < buttons.length; i++ ){
     buttons[i].onclick = function(){
-        if(document.getElementById('result1').innerHTML === ''){
-            firstNumber(this.innerHTML);
-        }
-        else {
-            secondNumber(this.innerHTML);
-        }
+        firstNumber(this.innerHTML);
+        // if(document.getElementById('result1').innerHTML === ''){
+        //     firstNumber(this.innerHTML);
+        // }
+        // else {
+        //     secondNumber(this.innerHTML);
+        // }
     };
 }
 function firstNumber(num){
-    document.getElementById('result1').innerHTML = num;
+    var number = document.getElementById('result1').innerHTML;
+    document.getElementById('result1').innerHTML = number + num;
 }
+
 function secondNumber(num2){
-    document.getElementById('result2').innerHTML = num2;
+    var number = document.getElementById('result2').innerHTML;
+    document.getElementById('result2').innerHTML = number + num2;
 }
 //
 

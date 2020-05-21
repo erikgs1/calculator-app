@@ -12,13 +12,13 @@ var operations = {
 }
 for (var i = 0; i < buttons.length; i++ ){
     buttons[i].onclick = function(){
-        firstNumber(this.innerHTML);
-        // if(document.getElementById('result1').innerHTML === ''){
-        //     firstNumber(this.innerHTML);
-        // }
-        // else {
-        //     secondNumber(this.innerHTML);
-        // }
+        // firstNumber(this.innerHTML);
+        if(cliqueiNum1 === false){
+           firstNumber(this.innerHTML);
+         }
+        else {
+            secondNumber(this.innerHTML);
+         }
     };
 }
 function firstNumber(num){
@@ -39,6 +39,7 @@ for (var j = 0; j < operator.length; j++ ){
 }
 function operation(ope){
     document.getElementById('operator').innerHTML = ope;
+    cliqueiNum1 = true
 
 }
 equal.onclick = function(){

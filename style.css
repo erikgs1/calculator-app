@@ -7,8 +7,73 @@
 body{
     background-color: #e6eafe;
     color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modal-button{
+    max-width: 70px;
+    margin: 30px auto 0;
+}
+.modal-button button{
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+}
+.modal {
+    width: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    color: #000;    
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    background-color: #fff;
+    display: none;
+}
+.modal .modal-header {
+    width: 100%;
+    min-height: 65px;
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+.modal .modal-header .modal-close{
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    margin-top: -40px;
+    margin-right: -10px;
+    float: right;
+    cursor: pointer;
+    opacity: .5;
 }
 
+
+.modal .modal-body{
+    width: 100%;
+    min-height: 65px;
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+    
+}
+.modal .modal-footer{
+    width: 100%;
+    min-height: 75px;
+    padding: 20px ;
+}
+.modal .modal-footer button{
+    float: right;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+}
 .calculatorBody {
     width: 230px;
     margin: 30px auto 0;
@@ -88,7 +153,7 @@ button:active
   -webkit-transform: translate(0,3px);
 	border-bottom: 1px solid ;
 }
-button:hover{
-    background-color: #393756 !important;
+.keyboard li button:hover{
+    background-color: #393756;
     border: none;
 }

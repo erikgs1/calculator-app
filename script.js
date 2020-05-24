@@ -2,6 +2,9 @@ var buttons = document.querySelectorAll(".buttons");
 var operator = document.querySelectorAll(".operator");
 var equal = document.querySelector(".equal");
 var clear = document.querySelector(".clear");
+var exitModal = document.querySelector(".button-exit");
+var buttonModal = document.getElementById("button-modal");
+
 var cliqueiNum1 = false;
 var cliqueiResult = false;
 var operations = {
@@ -10,6 +13,14 @@ var operations = {
     '*': function (param1, param2) {return param1 * param2;},
     '/': function (param1, param2) {return param1 / param2;},
     '%': function (param1, param2) {return param1 % param2;}
+}
+buttonModal.onclick = function(){
+    var modal = document.querySelector(".modal");
+    modal.style.display = 'block';
+}
+exitModal.onclick = function(){
+    var modal = document.querySelector(".modal");
+    modal.style.display = 'none';
 }
 for (var i = 0; i < buttons.length; i++ ){
     buttons[i].onclick = function(){
